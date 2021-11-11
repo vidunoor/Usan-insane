@@ -1,0 +1,16 @@
+#somediv {
+    width:50%;
+    height:100px;
+    position: relative;
+  }
+  
+  #somediv:after, #somediv:before {
+    content:' ';
+    position: absolute;
+    width:50%;
+    height:100%;
+    z-index: -1;
+  }
+  
+  #somediv:after {left: 0px; background: aqua;  }
+  #somediv:before {right: 0px; background: lime;}
